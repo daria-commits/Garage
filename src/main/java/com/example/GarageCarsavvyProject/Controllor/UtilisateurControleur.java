@@ -13,12 +13,11 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import java.util.Map;
+
 @Slf4j
 @RestController
 @AllArgsConstructor
-@NoArgsConstructor
 @RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-
 public class UtilisateurControleur {
     private JwtService jwtService;
     private AuthenticationManager authenticationManager;
